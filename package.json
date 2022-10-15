@@ -1,0 +1,22 @@
+{
+  "name": "hands-on-typescript",
+  "version": "1.0.0",
+  "description": "hands on learning with typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/YuYokoyama/hands-on-typescript.git"
+  },
+  "author": "yykm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuYokoyama/hands-on-typescript/issues"
+  },
+  "homepage": "https://github.com/YuYokoyama/hands-on-typescript#readme",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
