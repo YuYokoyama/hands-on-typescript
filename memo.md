@@ -19,3 +19,9 @@ JavaScriptの型はjavaScriptエンジンが使うもの
 
 **▶︎ 型推論**
 型推論できる
+
+**▶︎ watch mode**
+tsc {*.ts} --watch or -w
+
+**▶︎ init tsc config**
+tsc --init
