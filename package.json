@@ -4,7 +4,8 @@
   "description": "hands on learning with typescript",
   "main": "index.js",
   "scripts": {
-    "compile": "tsc ./src/*.ts --outDir ./dist"
+    "compile": "npx tsc",
+    "watch": "npx tsc --watch"
   },
   "repository": {
     "type": "git",
