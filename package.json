@@ -4,7 +4,7 @@
   "description": "hands on learning with typescript",
   "main": "index.js",
   "scripts": {
-    "compile": "tsc ./src/*.ts --outDir ./src/dist"
+    "compile": "tsc ./src/*.ts --outDir ./dist"
   },
   "repository": {
     "type": "git",
