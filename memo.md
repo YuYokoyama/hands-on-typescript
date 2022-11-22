@@ -20,8 +20,16 @@ JavaScriptの型はjavaScriptエンジンが使うもの
 **▶︎ 型推論**
 型推論できる
 
-**▶︎ watch mode**
-tsc {*.ts} --watch or -w
-
 **▶︎ init tsc config**
 tsc --init
+
+**▶︎ polyfill**
+ある機能をサポートしていないブラウザでその機能を実現するためのコード。
+TSCにおいては「ES2020の機能を使ってTypeScriptを書きたいが、その機能はブラウザでサポートされていない」などという状況で使用される。
+
+**▶︎ 型定義ファイル**
+jsでexportされたモジュールの型の定義をアンビエント宣言（declare）で記述された拡張子が.d.tsのファイル。
+
+jsで書かれたnpmパッケージをtypescriptでimportして使えるのは型定義ファイルがimportされているから。
+ライブラリがtsで書かれておらず、jsで書かれている場合に別途DTというレポジトリから型定義ファイルをnpm @types/{パッケージ名}でnode_moduls/@types 配下にインストールする必要がある。
+もし、jsで書かれたライブラリをimportした場合、tscはこの@typesディレクトリを確認して型チェックを行う。
