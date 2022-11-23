@@ -1,4 +1,10 @@
 class Person {
+
+    static species = 'homo sapiens';
+    static isAdult(age: number): boolean {
+        return age > 20;
+    }
+
     // readonly name: string;
     // private age: number;
 
@@ -67,3 +73,8 @@ console.log(teacher.subject);
 teacher.subject = 'science';
 console.log(teacher.subject);
 teacher.greeting();
+
+// static
+// ------------------------------------------------------
+console.log(Person.species);
+console.log(Person.isAdult(21));
