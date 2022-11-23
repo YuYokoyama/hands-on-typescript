@@ -78,3 +78,18 @@ teacher.greeting();
 // ------------------------------------------------------
 console.log(Person.species);
 console.log(Person.isAdult(21));
+
+// abstract
+// ------------------------------------------------------
+abstract class Animal {
+    abstract bark(): void;
+}
+
+class Dog extends Animal {
+    bark(): void {
+        console.log('wan wan !');
+    }
+}
+
+const dog = new Dog();
+dog.bark();
