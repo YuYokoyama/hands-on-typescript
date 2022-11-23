@@ -40,16 +40,30 @@ person.greeting();
 // ------------------------------------------------------
 class Teacher extends Person {
 
-    constructor(name: string, age: number, public subject: string) {
+    get subject(): string {
+        return this._subject;
+    }
+
+    set subject(value: string){
+        if(!value){
+            throw new Error('empty value!');
+        }
+        this._subject = value;
+    }
+
+    constructor(name: string, age: number, private _subject: string) {
         super(name, age);
     }
 
     override greeting(this: Teacher) {
         console.log(`hello ${this.name}.`);
         console.log(`my age is ${this.age} years old.`);
-        console.log(`I teach ${this.subject}.`);
+        console.log(`I teach ${this._subject}.`);
     }
 }
 
 const teacher = new Teacher('yykm teacher', 30, 'math');
+console.log(teacher.subject);
+teacher.subject = 'science';
+console.log(teacher.subject);
 teacher.greeting();
